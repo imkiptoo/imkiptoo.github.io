@@ -1,3 +1,51 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import 'overlayscrollbars/styles/overlayscrollbars.css';
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    /*font-family: Noto Sans, sans-serif;*/
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.font-ibm-plex-sans {
+    font-family: "IBM Plex Sans", serif;
+}
+
+.font-ibm-plex-serif {
+    font-family: "IBM Plex Serif", serif;
+}
+
+.font-jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+.os-scrollbar-vertical {
+    width: 12px; /* Adjust the vertical scrollbar width */
+}
+
+@layer components {
+    .btn-group {
+        @apply flex -space-x-px; /* Adjust spacing between buttons */
+    }
+    .btn {
+        @apply px-4 py-[5px] border border-neutral-200 text-sm font-normal text-neutral-400 bg-neutral-100 hover:bg-neutral-50 hover:text-black transition-all;
+    }
+    .btn:first-child {
+        @apply rounded-l-md;
+    }
+    .btn:last-child {
+        @apply rounded-r-md;
+    }
+    .btn:not(:first-child):not(:last-child) {
+        @apply rounded-none;
+    }
+    .btn.active {
+        @apply bg-white text-black font-medium;
+    }
+}
