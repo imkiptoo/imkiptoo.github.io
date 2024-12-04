@@ -1,31 +1,22 @@
 <script>
-	import Icon from '@iconify/svelte';
+	import ThemeButton from '$lib/components/right-pane/ThemeButton.svelte';
 </script>
 <div class="flex flex-col space-y-4 py-4">
 	<div class="text-sm text-neutral-400">Configurations</div>
 	<div class="flex flex-col space-y-4">
 		<!-- Theme -->
 		<div>
-			<div class="font-medium text-black mb-2">Theme</div>
+			<div class="font-medium mb-2">Theme</div>
 			<div class="btn-group">
-				<button class="btn active" title="Automatic Brightness">
-					<Icon icon="material-symbols:brightness-auto-outline-rounded" height="20"/>
-				</button>
-				<button class="btn" title="Light Mode">
-					<Icon icon="material-symbols:sunny-outline-rounded" height="20"/>
-				</button>
-				<button class="btn" title="Dark Mode">
-					<Icon icon="material-symbols:dark-mode-outline-rounded" height="20"/>
-				</button>
-				<button class="btn" title="Braun">
-					<Icon icon="material-symbols:apparel-outline" height="20"/>
-				</button>
+				<ThemeButton title="Automatic Brightness" icon="material-symbols:brightness-auto-outline-rounded" themeName="device"/>
+				<ThemeButton title="Light Mode" icon="material-symbols:sunny-outline-rounded" themeName="light"/>
+				<ThemeButton title="Dark Mode" icon="material-symbols:dark-mode-outline-rounded" themeName="dark"/>
 			</div>
 		</div>
 
 		<!-- Font size -->
 		<div>
-			<div class="font-medium text-black mb-2">Font size</div>
+			<div class="font-medium mb-2">Font size</div>
 			<div class="btn-group">
 				<button class="btn">S</button>
 				<button class="btn active">M</button>
@@ -35,7 +26,7 @@
 
 		<!-- Column width -->
 		<div>
-			<div class="font-medium text-black mb-2">Page width</div>
+			<div class="font-medium mb-2">Page width</div>
 			<div class="btn-group">
 				<button class="btn">S</button>
 				<button class="btn active">M</button>
@@ -45,7 +36,7 @@
 
 		<!-- Text align -->
 		<div>
-			<div class="font-medium text-black mb-2">Text align</div>
+			<div class="font-medium mb-2">Text align</div>
 			<div class="btn-group">
 				<button class="btn active">Auto</button>
 				<button class="btn">Justify</button>
@@ -54,19 +45,19 @@
 
 		<!-- Language -->
 		<div>
-			<div class="font-medium text-black mb-2">Language</div>
+			<div class="font-medium mb-2">Language</div>
 			<div class="btn-group">
 				<button class="btn active" title="English">
-					<Icon icon="twemoji:flag-united-kingdom" height="20"/>
+					ENG
 				</button>
 				<button class="btn" title="Deutsch">
-					<Icon icon="twemoji:flag-germany" height="20" class="grayscale opacity-50"/>
+					DEU
 				</button>
 				<button class="btn" title="Français">
-					<Icon icon="twemoji:flag-france" height="20" class="grayscale opacity-50"/>
+					FRA
 				</button>
 				<button class="btn" title="Español">
-					<Icon icon="twemoji:flag-spain" height="20" class="grayscale opacity-50"/>
+					ESP
 				</button>
 			</div>
 		</div>

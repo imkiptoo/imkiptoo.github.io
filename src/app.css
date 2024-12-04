@@ -34,7 +34,12 @@
         @apply flex -space-x-px; /* Adjust spacing between buttons */
     }
     .btn {
-        @apply px-4 py-[5px] border border-neutral-200 text-sm font-normal text-neutral-400 bg-neutral-100 hover:bg-neutral-50 hover:text-black transition-all;
+        @apply px-4 py-[5px] border border-neutral-200 dark:border-neutral-700
+        text-sm font-normal text-neutral-400 dark:text-neutral-600
+        bg-neutral-100 dark:bg-neutral-800
+        hover:bg-neutral-50 dark:hover:bg-neutral-700
+        hover:text-black dark:hover:text-white
+        transition-all;
     }
     .btn:first-child {
         @apply rounded-l-md;
@@ -46,6 +51,23 @@
         @apply rounded-none;
     }
     .btn.active {
-        @apply bg-white text-black font-medium;
+        @apply bg-white dark:bg-neutral-800 text-black dark:text-white font-medium;
+    }
+
+    /* Theme */
+
+    html.light {
+        @apply bg-neutral-50 text-black; /* Default light theme */
+    }
+
+    html.dark {
+        @apply bg-neutral-900 text-white;
+    }
+
+    .faded {
+        @apply text-neutral-400;
+    }
+    html.dark .faded {
+        @apply text-neutral-400;
     }
 }

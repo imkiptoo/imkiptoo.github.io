@@ -6,9 +6,9 @@
 </script>
 
 <div
+	{...$$restProps}
 	class="cursor-pointer"
 	title="{tooltip}"
-	{...$$restProps}
 >
 	<Icon icon="{icon}" height="24px" />
 </div>

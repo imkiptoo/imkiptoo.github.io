@@ -1,4 +1,4 @@
-<div class="pb-4 pt-4 flex flex-col space-y-4 divide-y">
+<div class="pb-4 pt-4 flex flex-col space-y-4 divide-y text-neutral-400 hover:text-black dark:hover:text-white">
 	<div class="space-y-1">
 		<div class="text-sm text-neutral-400">Source Code</div>
 		<div>

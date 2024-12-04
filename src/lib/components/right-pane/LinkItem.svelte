@@ -5,8 +5,8 @@
 	export let title;
 </script>
 <div class="flex space-x-2">
-	<img src="{icon}" class="h-6 w-6" alt="{alt}" />
+	<img src="{icon}" class="h-[26px] w-[26px]" alt="{alt}" />
 	<div class="hover:underline">
-		<a href="{href}" target="_blank" rel="noopener noreferrer" class="text-sm text-black">{title}</a>
+		<a href="{href}" target="_blank" rel="noopener noreferrer">{title}</a>
 	</div>
 </div>

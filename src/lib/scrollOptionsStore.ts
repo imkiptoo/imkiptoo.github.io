@@ -1,6 +1,8 @@
 import { writable } from 'svelte/store';
 import type { Options } from 'overlayscrollbars';
 
+
+
 const overlayScrollbarOptionsValue: Options = {
 	paddingAbsolute: false,
 	showNativeOverlaidScrollbars: false,
@@ -26,4 +28,4 @@ const overlayScrollbarOptionsValue: Options = {
 	}
 };
 
-export const overlayScrollbarOptions = writable(overlayScrollbarOptionsValue);
+export let overlayScrollbarOptions = writable(overlayScrollbarOptionsValue);
