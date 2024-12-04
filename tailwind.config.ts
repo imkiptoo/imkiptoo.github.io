@@ -11,6 +11,7 @@ export default {
 				"primary-dark": "#ffc06e",
 				"light-border": "#e5e5e5",
 				"dark-border": "#262626",
+				"dark-bg": "#0e1113",
 			},
 		}
 	},

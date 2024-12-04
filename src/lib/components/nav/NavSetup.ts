@@ -73,3 +73,9 @@ const navItems: NavItem[] = [
 ];
 
 export const navigation = new Navigation(navItems);
+
+
+export function simulateLabelClick() {
+	const label = document.querySelector('label[for="drawer-toggle"]') as HTMLLabelElement;
+	label?.click(); // Use .click() safely after asserting the type
+}

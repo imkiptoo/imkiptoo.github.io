@@ -61,7 +61,7 @@
     }
 
     html.dark {
-        @apply bg-[#0e1113] text-[#f0f6fc];
+        @apply bg-dark-bg text-[#f0f6fc];
     }
 
     .faded {

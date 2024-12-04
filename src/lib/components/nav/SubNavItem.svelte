@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { simulateLabelClick } from '$lib/components/nav/NavSetup';
+
 	export let title;
 	export let link;
 	export let extraClass = "";
@@ -8,6 +10,8 @@
 
 		if (targetElement) {
 			targetElement.scrollIntoView({ behavior: 'smooth' });
+
+			simulateLabelClick();
 		}
 	};
 </script>

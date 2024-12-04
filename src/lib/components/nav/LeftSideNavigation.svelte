@@ -11,7 +11,8 @@
 </script>
 
 <OverlayScrollbarsComponent
-	class="h-full w-80 py-2 px-2 border-r border-r-light-border dark:border-r-dark-border"
+	{...$$restProps}
+	class="h-full w-full lg:w-80 py-2 px-2 border-r border-r-light-border dark:border-r-dark-border"
 	options={$overlayScrollbarOptions}
 	defer
 >
