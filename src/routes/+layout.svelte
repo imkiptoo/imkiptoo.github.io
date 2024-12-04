@@ -44,12 +44,12 @@
 			</div>
 		</OverlayScrollbarsComponent>
 		<OverlayScrollbarsComponent
-			class="h-full w-80 px-4 border-l dark:border-l-neutral-800 flex flex-col justify-between"
+			class="h-full w-80 px-4 border-l border-l-light-border dark:border-l-dark-border flex flex-col justify-between"
 			options={$overlayScrollbarOptions}
 			defer
 		>
 			<div class="flex h-full flex-col">
-				<div class="flex flex-col flex-grow flex-1 space-y-4 divide-y">
+				<div class="flex flex-col flex-grow flex-1 space-y-4 divide-y divide-light-border dark:divide-dark-border">
 					<Links />
 					<Configurations />
 				</div>

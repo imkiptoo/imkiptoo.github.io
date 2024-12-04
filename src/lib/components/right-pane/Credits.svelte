@@ -1,4 +1,4 @@
-<div class="pb-4 pt-4 flex flex-col space-y-4 divide-y text-neutral-400 hover:text-black dark:hover:text-white">
+<div class="pb-4 pt-4 flex flex-col space-y-4 divide-y divide-light-border dark:divide-dark-border text-neutral-400 hover:text-black dark:hover:text-white">
 	<div class="space-y-1">
 		<div class="text-sm text-neutral-400">Source Code</div>
 		<div>
@@ -6,7 +6,7 @@
 		</div>
 		<div class="text-sm">
 			This website was developed from the ground-up using <a target="_blank" href="https://svelte.dev/" title="Icons8" class="underline">Svelte</a>.
-			The source code is available here: <a target="_blank" href="https://github.com/imkiptoo/my-svelte-resume" title="GitHub" class="underline">GitHub</a>. Feel free to fork and modify it to suit your needs ;)
+			The source code is available here: <a target="_blank" href="https://github.com/imkiptoo/imkiptoo.github.io" title="GitHub" class="underline">GitHub</a>. Feel free to fork and modify it to suit your needs ;)
 		</div>
 	</div>
 	<div class="space-y-1 pt-4">

@@ -2,7 +2,7 @@
 	import HeaderLink from '$lib/components/header/HeaderLink.svelte';
 </script>
 
-<div class="flex w-full px-40 h-14 justify-between shadow-md bg-black text-white" id="my-header">
+<div class="flex w-full px-40 h-14 justify-between shadow-md dark:shadow-none dark:border-b border-transparent dark:border-dark-border bg-black dark:bg-transparent text-white" id="my-header">
 	<div class="flex justify-center items-center font-sans font-bold px-4">
 		<div class="flex space-x-4 justify-center items-center">
 			<!--<div>
