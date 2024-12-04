@@ -26,7 +26,7 @@
 			</label>-->
 		</div>
 		<span>Isaac Kiptoo Mulwa</span>
-		<span class="hidden lg:flex">&CenterDot;</span>
+		<span class="hidden lg:flex px-3">&CenterDot;</span>
 		<span class="hidden lg:flex font-thin italic">Software Engineer</span>
 	</div>
 
