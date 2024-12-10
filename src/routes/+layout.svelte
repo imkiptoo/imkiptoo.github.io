@@ -7,6 +7,7 @@
 	import LeftSideNavigation from '$lib/components/nav/LeftSideNavigation.svelte';
 	import RightSideNavigation from '$lib/components/right-pane/RightSideNavigation.svelte';
 	import Icon from '@iconify/svelte';
+	import { simulateLeftLabelClick, simulateRightLabelClick } from '$lib/components/nav/NavSetup';
 
 	let { children } = $props();
 	let isLeftDrawerOpen = false;
@@ -33,35 +34,34 @@
 	<Header
 		on:openLeftDrawer={() => {
 			isLeftDrawerOpen = true;
-			let drawerToggle = document.getElementById('drawer-toggle');
-			if(drawerToggle != null){
-				drawerToggle.setAttribute('checked', "false");
-				console.log();
-			}
+			simulateLeftLabelClick();
 		}}
-		on:openRightDrawer={() => isRightDrawerOpen = true}
+		on:openRightDrawer={() => {
+			isLeftDrawerOpen = false;
+			simulateRightLabelClick();
+		}}
 	/>
-	<div class="flex md:hidden">
-		<input type="checkbox" id="drawer-toggle" class="relative hidden sr-only peer" onchange={() => {
+	<div class="flex lg:hidden">
+		<input type="checkbox" id="left-drawer-toggle" class="relative sr-only peer" onchange={() => {
 			isLeftDrawerOpen = !isLeftDrawerOpen;
 		}}>
-		<label for="drawer-toggle" class="absolute top-0 h-14 w-14 left-0"></label>
+		<label for="left-drawer-toggle" class="absolute top-0 h-14 w-14 left-0"></label>
 
-		<div class="fixed flex flex-col justify-between top-[52px] bottom-0 left-0 z-20 w-full duration-100 transform -translate-x-full bg-neutral-50 dark:bg-dark-bg shadow-lg peer-checked:translate-x-0">
+		<div class="fixed flex flex-col justify-between top-[52px] border-t border-t-light-border dark:border-t-dark-border bottom-0 left-0 z-20 w-full duration-100 transform -translate-x-full bg-neutral-50 dark:bg-dark-bg shadow-lg peer-checked:translate-x-0">
 			<div class="flex h-full w-full">
 				<LeftSideNavigation />
-				<div style="writing-mode: vertical-rl" class="w-16 cursor-vertical-text flex items-center justify-between pb-3 pt-4">
-					<label class="faded" for="drawer-toggle">
+				<div style="writing-mode: vertical-rl" class="min-w-14 cursor-vertical-text flex items-center justify-between pb-3 pt-4">
+					<label class="faded" for="left-drawer-toggle">
 						<a href="https://github.com/imkiptoo" target="_blank">github.com/imkiptoo</a>
 					</label>
-					<label class="faded" for="drawer-toggle">
+					<label class="faded" for="left-drawer-toggle">
 						<Icon icon="fluent:dismiss-24-regular" height="24px" />
 					</label>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="flex h-full lg:mx-40 overflow-hidden relative">
+	<div class="flex h-full mx-0 xl:mx-24 2xl:mx-40 overflow-hidden relative">
 		<div class="hidden lg:flex h-full">
 			<LeftSideNavigation />
 		</div>
@@ -79,6 +79,26 @@
 
 		<div class="hidden lg:flex h-full">
 			<RightSideNavigation class="hidden" />
+		</div>
+	</div>
+	<div class="flex lg:hidden">
+		<input type="checkbox" id="right-drawer-toggle" class="relative hidden sr-only peer" onchange={() => {
+			isRightDrawerOpen = !isRightDrawerOpen;
+		}}>
+		<label for="right-drawer-toggle" class="absolute top-0 h-14 w-14 right-0"></label>
+
+		<div class="fixed flex flex-col justify-between top-[52px] border-t border-t-light-border dark:border-t-dark-border bottom-0 right-0 z-10 w-full duration-100 transform translate-x-full bg-neutral-50 dark:bg-dark-bg shadow-lg peer-checked:translate-x-0">
+			<div class="flex h-full w-full">
+				<div style="writing-mode: vertical-rl" class="min-w-14 cursor-vertical-text flex items-center justify-between pb-3 pt-4">
+					<label class="faded" for="right-drawer-toggle">
+						<a href="https://github.com/imkiptoo" target="_blank">github.com/imkiptoo</a>
+					</label>
+					<label class="faded" for="right-drawer-toggle">
+						<Icon icon="fluent:dismiss-24-regular" height="24px" />
+					</label>
+				</div>
+				<RightSideNavigation />
+			</div>
 		</div>
 	</div>
 </div>

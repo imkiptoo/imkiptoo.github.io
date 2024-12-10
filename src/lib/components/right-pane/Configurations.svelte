@@ -56,9 +56,9 @@
 				<button class="btn" title="Français">
 					FRA
 				</button>
-				<button class="btn" title="Español">
+				<!--<button class="btn" title="Español">
 					ESP
-				</button>
+				</button>-->
 			</div>
 		</div>
 	</div>

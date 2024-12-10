@@ -5,7 +5,7 @@
 			<img src="/brands/svelte.svg" class="h-5" alt="svelte-logo">
 		</div>
 		<div class="text-sm">
-			This website was developed from the ground-up using <a target="_blank" href="https://svelte.dev/" title="Icons8" class="underline">Svelte</a>.
+			This website was developed from the ground-up using <a target="_blank" href="https://svelte.dev/" title="Svelte" class="underline">Svelte</a>.
 			The source code is available here: <a target="_blank" href="https://github.com/imkiptoo/imkiptoo.github.io" title="GitHub" class="underline">GitHub</a>. Feel free to fork and modify it to suit your needs ;)
 		</div>
 	</div>

@@ -10,7 +10,7 @@
 	const openRightDrawer = () => dispatch('openRightDrawer');
 </script>
 
-<div class="flex w-full lg:px-40 h-14 justify-between shadow-md dark:shadow-none dark:border-b border-transparent dark:border-dark-border bg-black dark:bg-transparent text-white" id="my-header">
+<div class="flex w-full px-0 md:px-0 lg:px-0 xl:px-24 2xl:px-40 h-14 justify-between shadow-md dark:shadow-none dark:border-b border-transparent dark:border-dark-border bg-black dark:bg-transparent text-white" id="my-header">
 	<!-- Left section: User information -->
 	<div class="flex justify-center items-center font-sans font-bold px-4">
 		<div class="flex lg:hidden pr-4">
@@ -26,14 +26,14 @@
 			</label>-->
 		</div>
 		<span>Isaac Kiptoo Mulwa</span>
-		<span class="hidden lg:flex px-3">&CenterDot;</span>
-		<span class="hidden lg:flex font-thin italic">Software Engineer</span>
+		<span class="hidden md:flex px-3">&CenterDot;</span>
+		<span class="hidden md:flex font-thin italic">Software Engineer</span>
 	</div>
 
 	<!-- Right section: Icons and links -->
 	<div class="flex lg:hidden justify-center items-center px-4">
 		<!-- Right Drawer Toggle Icon -->
-		<button on:click={openLeftDrawer} class="focus:outline-none">
+		<button on:click={openRightDrawer} class="focus:outline-none">
 			<Icon icon="fluent:settings-24-regular" height="24px" />
 		</button>
 	</div>

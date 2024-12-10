@@ -8,7 +8,7 @@ import { overlayScrollbarOptions } from '$lib/scrollOptionsStore';
 
 <OverlayScrollbarsComponent
 	{...$$restProps}
-	class="h-full sm:w-full lg:w-80 px-4 border-l border-l-light-border dark:border-l-dark-border lg:flex lg:flex-col justify-between"
+	class="h-full sm:w-full lg:w-64 xl:w-72 2xl:w-80 px-4 border-l border-l-light-border dark:border-l-dark-border lg:flex lg:flex-col justify-between"
 	options={$overlayScrollbarOptions}
 	defer
 >

@@ -12,7 +12,7 @@
 
 <OverlayScrollbarsComponent
 	{...$$restProps}
-	class="h-full w-full lg:w-80 py-2 px-2 border-r border-r-light-border dark:border-r-dark-border"
+	class="h-full w-full lg:w-64 xl:w-72 2xl:w-80 py-2 px-2 border-r border-r-light-border dark:border-r-dark-border"
 	options={$overlayScrollbarOptions}
 	defer
 >
