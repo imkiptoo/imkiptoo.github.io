@@ -10,7 +10,7 @@
 	const openRightDrawer = () => dispatch('openRightDrawer');
 </script>
 
-<div class="flex w-full px-0 md:px-0 lg:px-0 xl:px-24 2xl:px-40 h-14 justify-between shadow-md dark:shadow-none dark:border-b border-transparent dark:border-dark-border bg-black dark:bg-transparent text-white" id="my-header">
+<div class="flex fixed w-full px-0 md:px-0 lg:px-0 xl:px-24 2xl:px-40 h-14 justify-between shadow-md dark:shadow-none dark:border-b border-transparent dark:border-dark-border bg-black dark:bg-transparent text-white" id="my-header">
 	<!-- Left section: User information -->
 	<div class="flex justify-center items-center font-sans font-bold px-4">
 		<div class="flex lg:hidden pr-4">

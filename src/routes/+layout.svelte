@@ -41,7 +41,7 @@
 			simulateRightLabelClick();
 		}}
 	/>
-	<div class="flex lg:hidden">
+	<div class="flex mt-14 lg:hidden">
 		<input type="checkbox" id="left-drawer-toggle" class="relative sr-only peer" onchange={() => {
 			isLeftDrawerOpen = !isLeftDrawerOpen;
 		}}>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex h-full mx-0 xl:mx-24 2xl:mx-40 overflow-hidden relative">
+	<div class="flex h-full lg:mt-14 mt-0 mx-0 xl:mx-24 2xl:mx-40 overflow-hidden relative">
 		<div class="hidden lg:flex h-full">
 			<LeftSideNavigation />
 		</div>
@@ -81,7 +81,7 @@
 			<RightSideNavigation class="hidden" />
 		</div>
 	</div>
-	<div class="flex lg:hidden">
+	<div class="flex mt-14 lg:hidden">
 		<input type="checkbox" id="right-drawer-toggle" class="relative hidden sr-only peer" onchange={() => {
 			isRightDrawerOpen = !isRightDrawerOpen;
 		}}>
