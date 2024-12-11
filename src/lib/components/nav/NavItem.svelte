@@ -10,6 +10,7 @@
 		const targetElement = document.getElementById(link);
 
 		if (targetElement) {
+			//targetElement.style.scrollMarginTop = '56px';
 			targetElement.scrollIntoView({ behavior: 'smooth' });
 
 			simulateLeftLabelClick();
